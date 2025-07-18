@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter the first number</label>
+        <input type="text" name="num1" id="txt1"><br>
+ 
+        <label>Enter the Second Number</label>
+        <input type="text" name="num2" id="txt2"><br>
+ 
+        <button type="button"id="btnadd" onclick="Addition()">Add</button>
+        <button type="button"id="btnsub" onclick="Subraction()">Sub</button>
+        <button type="button"id="btnmul" onclick="Multiplication()">Multiple</button>
+        <button type="button"id="btndiv" onclick="Division()">Division</button>
+ 
+ 
+        <strong>Result:<span id="res"></span></strong>
+ 
+ 
+ 
+    </form>
+ 
+    <script>
+        function Addition(){
+            let no1 = document.getElementById("txt1").value;
+            let no2 = document.getElementById("txt2").value;
+            console.log(parseInt(no1)+parseInt(no2));
+            document.getElementById("res").innerHTML=parseInt(no1)+parseInt(no2);
+        }
+ 
+        function Subraction(){
+            let no1 = document.getElementById("txt1").value;
+            let no2 = document.getElementById("txt2").value;
+            console.log(parseInt(no1)-parseInt(no2));
+            document.getElementById("res").innerHTML=parseInt(no1)-parseInt(no2);
+        }
+ 
+        function Multiplication(){
+            let no1 = document.getElementById("txt1").value;
+            let no2 = document.getElementById("txt2").value;
+            console.log(parseInt(no1)*parseInt(no2));
+            document.getElementById("res").innerHTML=parseInt(no1)*parseInt(no2);
+        }
+ 
+        function Division(){
+            let no1 = document.getElementById("txt1").value;
+            let no2 = document.getElementById("txt2").value;
+            console.log(parseInt(no1)/parseInt(no2));
+            document.getElementById("res").innerHTML=parseInt(no1)/(no2);
+        }
+    </script>
+</body>
+</html>

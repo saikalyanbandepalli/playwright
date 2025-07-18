@@ -1,0 +1,38 @@
+.container{
+    border: 3px solid blue;
+    width: 400px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.myheading {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 3px 2px 2px black;
+}
+.input-txt{
+    width: 350px;
+    height: 30px;
+    color: brown;
+    box-shadow: 5px 4px 5px black;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 6px 0px;
+}
+
+.txtContact{
+    width: 350px;
+    height: 30px;
+    color: brown;
+    box-shadow: 5px 4px 5px black;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 6px 0px;
+}
+
+.logo{
+     width: 350px;
+    height: 350px;
+}
