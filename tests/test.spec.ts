@@ -24,3 +24,25 @@ test('testing browser context', async () => {
 
 
 });
+
+
+
+test("auth test",async ()=>{
+    const browser:Browser = await chromium.launch({headless:false,channel:"chrome"});
+    const browserContext1:BrowserContext = await browser.newContext();
+    const page:Page = await browserContext1.newPage();
+    // const page:Page = await browserContext1
+
+    // await page.goto("http://quiz.hematitecorp.com/");
+    const userId:string = "admin@gmail.com";
+    const userPass:string = "admin@123";
+    const authHeader = "Basic "+btoa(userId+":"+userPass);
+    
+    page.setExtraHTTPHeaders({Authorization:authHeader});
+
+    await page.goto("http://quiz.hematitecorp.com/");
+    //browserContext1.close();
+   // browser.close();
+})
+
+
