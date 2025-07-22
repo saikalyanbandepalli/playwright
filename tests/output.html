@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="d1"></h1>
+    <h1 id="d2">Chennai</h1>
+    <h1 id="d3">India</h1>
+
+    <button type="button" onclick="changeData()">change Value</button><br>
+    <button type="button" >Red</button>
+    <button type="button">Green</button>
+    <button type="button">Blue</button>
+    <button type="button">Yellow</button>
+    <button type="button">Orange</button>
+    <hr>
+
+    <img id="d4" src="./samosa.jpg" alt="samosa" height="200px" width="300px"><br>
+    <strong>Samosa</strong> <br><br>
+    <button type="button">Samosa</button>
+    <button type="button" onclick="chageImg()">Jalebi</button>
+    <button type="button" >Idali</button>
+    <button type="button" >Dosa</button>
+    <button type="button" >Vada</button>
+
+    <script>
+      function chageImg(){
+         document.getElementById("d4").src = "./jalebi.jpg";
+      }
+
+        function changeData() {
+            document.getElementById("d2").innerHTML = "Tamilnadu";
+        }
+
+        //4.innerHTML: it is use to insert ,fetch data inside an element.
+        document.getElementById("d1").innerHTML = "Changepond";  // set value inside an element
+        document.getElementById("d2").style.color = "red"; // apply style to an element
+        let data = document.getElementById("d3").innerHTML; // access data from element.
+        console.log(data);
+
+        //1.document.write()
+        // document.write("hello friends <br>");
+        //2.window.alert();
+        // window.alert("Good Evening EveryOne");
+        //3.console.log();
+        // console.log("output in console");
+
+
+    </script>
+</body>
+
+</html>
